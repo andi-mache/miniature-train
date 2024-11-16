@@ -7,18 +7,18 @@ use yew_router::prelude::*;
 
 #[derive(Clone, Routable, PartialEq)]
 enum RootRoute {
-    #[at("/yew-template-for-github-io/")]
+    #[at("/miniature-train/")]
     Home,
-    #[at("/yew-template-for-github-io/:s")]
+    #[at("/miniature-train/:s")]
     Route,
 }
 
 #[derive(Clone, Routable, PartialEq)]
 enum Route {
-    #[at("/yew-template-for-github-io/about")]
+    #[at("/miniature-train/about")]
     About,
     #[not_found]
-    #[at("/yew-template-for-github-io/404")]
+    #[at("/miniature-train/404")]
     NotFound,
 }
 
