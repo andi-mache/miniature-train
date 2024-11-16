@@ -16,7 +16,12 @@ function findAllRsExtensions(dir) {
 }
 
 module.exports = {
-  content: findAllRsExtensions("./src"),
+  content: [
+    "./index.html",
+    "./css/**/*.css",
+    "./static/**/*.html",
+    findAllRsExtensions("./src"),
+  ],
   theme: {
     container: {
       center: true,

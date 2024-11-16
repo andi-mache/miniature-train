@@ -62,6 +62,10 @@ fn switch(routes: &Route) -> Html {
 
 // ===================================================================================
 
+mod components;
+
+
+
 /// main root
 #[function_component(App)]
 fn app() -> Html {
@@ -74,9 +78,10 @@ fn app() -> Html {
         // ********************************************************
         <BrowserRouter>
             <Switch<RootRoute> render={Switch::render(root_route)} />
+            <components::footer::Footer/>
         </BrowserRouter>
     }
-}
+} 
 
 /// entry point
 fn main() {
