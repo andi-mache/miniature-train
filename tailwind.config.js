@@ -20,7 +20,8 @@ module.exports = {
     "./index.html",
     "./css/**/*.css",
     "./static/**/*.html",
-    findAllRsExtensions("./src"),
+    "./src/**/*.rs",
+    //findAllRsExtensions("./src"),
   ],
   theme: {
     container: {
