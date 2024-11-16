@@ -1,7 +1,7 @@
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-mod components;
+
 
 
 // ===================================================================================
@@ -27,11 +27,10 @@ enum Route {
 
 fn root_route(routes: &RootRoute) -> Html {
     match routes {
-        RootRoute::Home => html! { 
-        <div>
+        RootRoute::Home => html! {
+            <div class="bg-indigo-500">
             <p class="text-4xl">{ "miniature-train" }</p>
-            <components::footer::Footer>
-        </div>
+            </div>
         },
         RootRoute::Route => html! {
             <Switch<Route> render={Switch::render(switch)} />
