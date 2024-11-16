@@ -1,6 +1,9 @@
 use yew::prelude::*;
 use yew_router::prelude::*;
 
+mod components;
+
+
 // ===================================================================================
 // for {username}.github.io/{repo_name}
 // replace 'yew-template-for-github.io' to your repo name
@@ -24,7 +27,12 @@ enum Route {
 
 fn root_route(routes: &RootRoute) -> Html {
     match routes {
-        RootRoute::Home => html! { <p class="text-4xl">{ "Yew Template. " }</p> },
+        RootRoute::Home => html! { 
+        <div>
+            <p class="text-4xl">{ "miniature-train" }</p>
+            <components::footer::Footer>
+        </div>
+        },
         RootRoute::Route => html! {
             <Switch<Route> render={Switch::render(switch)} />
         },
@@ -62,7 +70,6 @@ fn switch(routes: &Route) -> Html {
 
 // ===================================================================================
 
-mod components;
 
 
 
@@ -78,10 +85,9 @@ fn app() -> Html {
         // ********************************************************
         <BrowserRouter>
             <Switch<RootRoute> render={Switch::render(root_route)} />
-            <components::footer::Footer/>
         </BrowserRouter>
     }
-} 
+}
 
 /// entry point
 fn main() {
