@@ -76,7 +76,6 @@ fn switch(routes: &Route) -> Html {
 #[function_component(App)]
 fn app() -> Html {
     html! {
-        <main class={classes!("bg-indigo-500")} >
         // ********************************************************
         // **    basename is not supported on yew 0.19.0 yet.    **
         // <BrowserRouter basename="/yew-template-for-github-io/">
@@ -85,8 +84,8 @@ fn app() -> Html {
         // ********************************************************
         <BrowserRouter>
             <Switch<RootRoute> render={Switch::render(root_route)} />
+            <p>{"Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat."}</p>
         </BrowserRouter>
-        </main>
     }
 }
 
