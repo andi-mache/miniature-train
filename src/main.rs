@@ -28,8 +28,8 @@ enum Route {
 fn root_route(routes: &RootRoute) -> Html {
     match routes {
         RootRoute::Home => html! {
-            <div class="bg-indigo-500">
-            <p class="text-4xl">{ "miniature-train" }</p>
+            <div class={classes!("bg-indigo-500")}>
+            <p class={classes!("text-4xl")}>{ "miniature-train" }</p>
             </div>
         },
         RootRoute::Route => html! {
