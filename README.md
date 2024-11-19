@@ -1,6 +1,7 @@
 ![gh-pages-publish](https://github.com/andi-mache/miniature-train//actions/workflows/publish_gh_pages.yml/badge.svg)
 
 ## Test project for yew hosted on github.io
+[page site](https://andi-mache.github,io/miniature-train/)
 
 [About github.io](https://pages.github.com/)  
 
