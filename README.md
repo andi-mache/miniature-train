@@ -43,6 +43,8 @@ gh-pages branch
 
 go to `./.github/workflows/publish_gh_pages.yml` and add your domain in cname field.  
 
+noice
+
 ## Routing
 
 Using `static/404.html`. for more information, checkout https://github.com/rafgraph/spa-github-pages.  
